@@ -1,6 +1,7 @@
 # Git practice with java
 
 ### member
+ - [freesin94](https://github.com/freesin) : 박도현
  - [mojoblue](https://github.com/mojoblue)  : 이세희
 
 ### reference
