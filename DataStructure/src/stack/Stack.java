@@ -2,23 +2,39 @@ package stack;
 
 public class Stack {
 	int top = 0;
-	
+  int [] stackArray;
 	Stack(){
-		int [] stackArray = new int[10];
-		stackArray[0]=head;
-		head = stackArray[0];
+    
+  }
+  
+	Stack(){
+		stackArray = new int[10];
+    for(int i=0; i<size; i++){
+      stackArray[i] = null;
+    }
 	}
+  
 	Stack(int size){
-		
-			int [] stackArray = new int[size];
-		
-		stackArray[0]=head;
-		head = stackArray[0];
+		stackArray = new int[size];
+    for(int i=0; i<size; i++){
+      stackArray[i] = null;
+    }
 	}
-	
-	public boolean isEmpty() {
-		if(head == null)
-			System.out.println("stack is empty");
-		return true;
+  
+	public int search(int data)
+	{
+		int count = top;
+		if(top!=0){
+			while(stackArray[count]!=data)
+			{
+				count--;
+			}
+    }
+    
+		if(count ==-1){
+			System.out.println("Can't find index (return -1)");
+    }
+    
+		return count;
 	}
 }
