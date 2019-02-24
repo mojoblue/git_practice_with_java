@@ -40,7 +40,7 @@ public class Stack {
 		
 	}
 	
-	public void push(int j) {
-		stackArray[++top] = j;
+	public void push(int data) {
+		stackArray[++top] = data;
 	}
 }
