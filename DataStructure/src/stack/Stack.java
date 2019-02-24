@@ -39,4 +39,8 @@ public class Stack {
 		return (top == 0);
 		
 	}
+	
+	public void push(int j) {
+		stackArray[++top] = j;
+	}
 }
