@@ -24,6 +24,10 @@ public class Stack {
 			{
 				count--;
 			}
+		if(count ==-1)
+			System.out.println("Can't find index (return -1)");
+		
+		
 		return count;
 	}
 	
