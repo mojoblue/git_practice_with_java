@@ -3,9 +3,6 @@ package stack;
 public class Stack {
 	int top = 0;
   int [] stackArray;
-	Stack(){
-    
-  }
   
 	Stack(){
 		stackArray = new int[10];
@@ -21,20 +18,29 @@ public class Stack {
     }
 	}
   
+	public int pop() {
+		if(!isEmpty()) {
+			return Stack[top--];
+		}
+		// If data is not exist, return null.
+		else return null;		
+	}
+  
 	public int search(int data)
 	{
 		int count = top;
-		if(top!=0){
-			while(stackArray[count]!=data)
-			{
-				count--;
-			}
+		if(count == 0){
+			System.out.println("Can't find index (return null)");
+      return null;
     }
     
-		if(count ==-1){
-			System.out.println("Can't find index (return -1)");
+	  for(int i=0; i<count; i++)
+	  {
+       if(stackArray[i] == data){
+          count--;
+       }
     }
-    
-		return count;
+		return count-1;
 	}
 }
+
