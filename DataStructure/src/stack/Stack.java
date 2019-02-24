@@ -6,6 +6,9 @@ public class Stack {
 	int size;
 	Stack(){
 		
+		size = 10;
+		stackArray = new int[size];
+		top = 0;
 	}
 	
 	Stack(int s){
